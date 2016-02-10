@@ -14,3 +14,10 @@ var drawcircle = function(e){
 }
 
 c.addEventListener("click",drawcircle);
+
+var clear = function(e){
+    ctx.clearRect(0,0,500,500);
+}
+
+var button = document.getElementById("clear");
+button.addEventListener("click",clear);
