@@ -1,5 +1,6 @@
 var pic = document.getElementById("vimg");
 var mbutton = document.getElementById("Expand");
+var sbutton = document.getElementById("Stop");
 var cbutton = document.getElementById("Clear");
 var add = 1;
 var IntervalID;
@@ -29,10 +30,13 @@ var animate = function(){
     IntervalID = window.setInterval(a,16);
     
 };
-var clear = function(){
+var stop = function(){
     window.clearInterval(IntervalID);
+};
+var clear = function(){
     pic.removeChild(document.getElementsByTagName("circle")[0]);
 }
 
 mbutton.addEventListener("click",animate);
+sbutton.addEventListener("click",stop);
 cbutton.addEventListener("click",clear);
