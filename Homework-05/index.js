@@ -22,6 +22,7 @@ var load = function(){
 	    return d + "px";
 	})
 	.append("text")
+	.style("color","green")
 	.text(function(d){
 	    return d + "Delegates";
 	});
