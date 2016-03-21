@@ -19,12 +19,12 @@ var load = function(){
 	.append("div")
 	.attr("class","bar")
 	.style("width",function(d){
-	    return d + "px";
+	    return scale(d) + "px";
 	})
 	.append("text")
-	.style("color","green")
+	.style("color","white")
 	.text(function(d){
-	    return d + "Delegates";
+	    return d + " Delegates";
 	});
     d3.select(".chart")
 	.selectAll(".bar")
@@ -34,3 +34,7 @@ var load = function(){
 	});
 };
 window.addEventListener("load",load);
+
+var scale = d3.scale.linear()
+    .domain([0,d3.max(delegates)])
+    .range([0,420])
