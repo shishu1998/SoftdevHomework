@@ -20,4 +20,6 @@ def symDiff(listA,listB):
 print symDiff([1,2,3],[2,3,4])
 
 def cart(listA,listB):
-    
+    return[(x,y) for x in listA for y in listB]
+
+print cart([1,2],['red','white'])
