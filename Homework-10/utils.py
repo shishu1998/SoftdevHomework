@@ -14,7 +14,7 @@ def timer(f):
         begin = time.time()
         f(*arg)
         end = time.time()
-        return "Execution time: " + str(end - begin)
+        return f(*arg) + "Execution time: " + str(end - begin)
     return inner
 
 #Gets first paragraph from Wikipedia about the location
