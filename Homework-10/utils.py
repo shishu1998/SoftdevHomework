@@ -6,7 +6,7 @@ import time
 
 def wrapper(f):
     def inner(*arg):
-        return f.func_name + ":" + str(arg)
+        return f.func_name + ":" + str(arg)+ f(*arg)
     return inner
 
 def timer(f):
