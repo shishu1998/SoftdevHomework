@@ -11,10 +11,10 @@ var load = function(){
 	.style("color","white")
     n.style.position = "absolute";
     n.style.left = window.innerWidth/2 + "px";
-    n.style.top = window.innerHeight + "px";
+    n.style.top = window.innerHeight - 100 + "px";
     p.style.position = "absolute";
     p.style.left = window.innerWidth/2 - 100 + "px";
-    p.style.top = window.innerHeight + "px";
+    p.style.top = window.innerHeight - 100 + "px";
 }
 
 var prevslide = function(){
