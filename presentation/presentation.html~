@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Websockets Presentation</title>
+  </head>
+  <body>
+    <center>
+    <h1><font size = "36">Websockets!</font></h1>
+    <h2><font size = "32">Press Next to start the Presentation</font></h2>
+    <h3><font size = "24">Information will appear here</font></h3>
+    <br>
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+    </center>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
