@@ -5,10 +5,10 @@ var text = ["<font size = '6'>Information will appear here</font>","<font size =
 var load = function(){
     d3.selectAll("h2")
 	.html(head[slidenum])
-	.style("color","white")
+   	.style("color","white")
     d3.selectAll("h3")
 	.html(text[slidenum])
-	.style("color","white")
+   	.style("color","white")
     n.style.position = "absolute";
     n.style.top = window.innerHeight - 100 + "px";
     n.style.left = window.innerWidth/2 + "px";
